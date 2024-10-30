@@ -1,0 +1,39 @@
+/* Damien Alary */
+#conteneur {
+  display: grid; 
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+
+.grille1 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+}
+
+
+.grille2 {
+  grid-template-columns: 1fr 2fr 3fr; 
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+}
+
+
+.grille3 {
+  grid-template-columns: 1fr 2fr 3fr; 
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 5px;
+}
+
+
+#conteneur > div {
+  background-color: pink; 
+  text-align: center; 
+  padding: 20px; 
+  border: 1px solid #000; 
+}
+
+#conteneur > div:nth-child(odd) {
+  background-color: lightskyblue; 
+}
